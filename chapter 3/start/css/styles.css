@@ -1,0 +1,386 @@
+
+
+@font-face {
+    font-family: "Inter var experimental";
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: oblique 0deg 10deg;
+    src: url("fonts/Inter.var.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("fonts/Inter-Regular.woff2") format("woff2"), url("fonts/Inter-Regular.woff") format("woff");
+}
+
+/* The Google Fonts in the index file
+https://fonts.googleapis.com/css?family=Noto+Serif:400i|Oswald:500&display=swap
+ Can be used like
+ *
+ *font-family: 'Oswald', sans-serif;
+ *font-family: 'Noto Serif', serif;
+ *
+ * */
+
+html {
+    box-sizing: border-box;
+    /* For better looking OS X and iOS */
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+/*Define These Elements with our values.*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    /*We will remove any margin from the elements above.*/
+    margin: 0;
+    /*We set the font-size to be 1rem.*/
+    font-size: 1rem;
+    /* H tags will not be bold unless you want it*/
+    font-weight: 400;
+}
+
+/*SVG are by default displayed as inline, set them do be display block */
+svg {
+    display: block;
+}
+
+img {
+    /*Gives us option to use images and make them responsive so the can scale 100% their natural size*/
+    max-width: 100%;
+    /*Display the images as block, rather than inline*/
+    display: block;
+}
+
+/*Set a body to have default color and linear greadint
+I always use liner gradient from this website
+https://www.eggradients.com/
+*/
+body {
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+@supports (font-variation-settings: "wdth" 115) {
+    body {
+        font-family: "Inter var experimental";
+    }
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container__logo {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-container__logo--main {
+    /*The logo will have this font family */
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.header-container__logo--secondary {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    position: relative;
+    margin: 10px 0 0 0;
+}
+
+.nav__link{
+    margin: 0 10px;
+    /*Set the font family for navigation links*/
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fefe;
+    /*Give the btn height and alignment so they are clicable and have more surface */
+    display: inline-flex;
+    min-height: 45px;
+    align-items: center;
+    /*Styles for the link btn*/
+    border: 0;
+    background: none;
+}
+.nav__link:hover{
+    cursor: pointer;
+    color: rgba(148, 142, 148, 0.933);
+   
+}
+
+
+.hero__cover {
+    border-radius: 5px;
+    width: 150px;
+    height: 170px;
+    box-shadow: 0 8px 20px -5px #000;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+
+
+.hero__intro {
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 94%);
+    background-color: #262c28;
+    padding: 80px 20px 20px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.hero__desc {
+    font-size: 12px;
+    color: #dddddd;
+    line-height: 1.8;
+    margin-top: 20px;
+    padding-top: 25px;
+    border-top: 1px solid #424242;
+}
+
+
+
+.hero__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: #ebebeb;
+}
+
+.hero__span {
+    position: relative;
+    display: inline-block;
+    line-height: 2;
+}
+
+.hero__span i {
+    position: absolute;
+    left: 0;
+    bottom: calc(50% + 12px);
+    color: #86988c;
+    font-size: 12px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.hero__edition {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 13px;
+    top: 40px;
+    right: 20px;
+}
+
+.about {
+    padding: 20px;
+}
+
+.about__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0 0;
+}
+
+.about__desc--title {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    color: #fff;
+}
+
+.about__desc p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+    color: #fff;
+
+}
+
+
+
+.buy-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.buy-btn__link {
+    border-radius: 25px;
+    padding: 15px 30px;
+    background-color: #69033f;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px;
+}
+.buy-btn__link:hover{
+    background-color: #3d0425;
+}
+.reviews {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    background-color: #222;
+    clip-path: polygon(0 0%, 100% 6%, 100% 94%, 0 100%);
+}
+
+
+blockquote {
+    font-size: 20px;
+    margin: 0;
+}
+
+.review {
+    font-size: 18px;
+    color: #fff;
+  
+    padding: 10px 20px;
+}
+
+.review p {
+    margin: 10px 0 40px;
+}
+
+
+
+.reviews__title {
+    color: #ebebeb;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+.mailing{
+    padding: 20px;
+   
+}
+
+.mailing__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.form__label{
+    font-size: 12px;
+    color: #fff;
+}
+
+.form__container {
+    display: flex;
+    align-items: center;
+    border-radius: 33px;
+    height: 45px;
+    background-color: #fff;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+.form__input {
+    border: none;
+    display: flex;
+    height: 100%;
+    font-family: inherit;
+    color: #0416b5;
+    font-size: 18px;
+    flex: 1 0 auto;
+    outline: 0;
+}
+
+.form__btn {
+    cursor: pointer;
+    outline: 0;
+    color: #0416b5;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    display: flex;
+    height: 100%;
+    border: 0;
+    align-items: center;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    background-color: #262c28;
+}
+
+.footer__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 20px 0 10px;
+}
+
+.footer__desc {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.footer__copy {
+    color: #dcdcdc;
+    margin: 20px 0;
+    font-size: 10px;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: auto;
+    font-size: 12px;
+    text-decoration-color: #aaa;
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chapter 3 Responsive Web Design using HTML5 and CSS & Media Queries</title>
+        <link href="./css/styles.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i|Oswald:500&display=swap" rel="stylesheet" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    </head>
+    <body>
+        <header class="header-container">
+            <a href="/" class="header-container__logo">
+                <span class="header-container__logo--main">Responsive</span>
+                <span class="header-container__logo--secondary">Web Dev</span>
+            </a>
+            <nav class="nav">
+                <a class="nav__link" href="#about">About</a>
+                <a class="nav__link" href="#reviews">Reviews</a>
+                <a class="nav__link" href="#subs">Subscribe</a>
+                <a class="nav__link" href="#buy">Buy</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <img class="hero__cover" src="./img/javascript.jpeg" alt="Rick Sekuloski JavaScript Course" />
+                <div class="hero__intro">
+                    <h1 class="hero__title">
+                        Learn JavaScript
+                        <span class="hero__span">
+                            <i>with</i>
+                            ES6+
+                        </span>
+                        <span class="hero__span">
+                            <i>and</i>
+                            Projects
+                        </span>
+                        <span class="hero__edition">Complete Course</span>
+                    </h1>
+                    <p class="hero__desc">
+                        Welcome everyone, my name is Rick Sekuloski and I'm a web developer and programmer that wants to teach others how to become a JavaScript leaning the newest features!
+                    </p>
+                    <a href="#learn" class="rwd-Hero_JumpLink">What will I learn?</a>
+                </div>
+            </section>
+            <section id="learn" class="about">
+                <div class="about__desc">
+                    <h5 class="about__desc--title">200+ Lectures Included</h5>
+                    <p>
+                       ES5, ES6, ES7.... and all of the latest features inclued
+                    </p>
+                </div>
+                <div class="about__desc">
+                    <h5 class="about__desc--title">Exercies Inclued</h5>
+                    <p>
+                        I have included a lot of different examples  and real word examples, you will learn how to code building real apps.
+                    </p>
+                </div>
+               
+                <div class="about__desc">
+                    <h5 class="about__desc--title">Who Should Take My Course</h5>
+                    <p>
+                       This course is for everyone that wants to learn how to become a front end web developer.
+                    </p>
+       
+                </div>
+                <div class="about__desc">
+                    <h5 class="about__desc--title">What will you learn</h5>
+                    <p>
+                        Each chapter will cover new important features of javascript like the basics or manipulation the DOM</p>
+                    <p>
+                       You will get enough practical knowledge so you will be confident in what you do.
+                    </p>
+
+                </div>
+            </section>
+            <div id="buy" class="buy-btn">
+
+                    <a href="https://www.udemy.com/course/master-javascript-the-most-compete-javascript-course-2020/" class="buy-btn__link">
+                        Buy from Udemy
+                    </a>
+            </div>
+            <section id="reviews" class="reviews">
+                <h2 class="reviews__title">Few Reviews</h2>
+                <div class="review">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, modi maxime architecto nesciunt amet dicta commodi. Illo molestiae nemo, necessitatibus quidem sapiente at deleniti eius obcaecati odit qui optio eaque?
+                    </blockquote>
+                    <p>– Tom Cruise</p>
+                </div>
+                <div class="review">
+                    <blockquote>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, tempora. Nam reiciendis animi at neque distinctio facere quia? Ab excepturi iste provident porro nemo error beatae delectus alias dolorem totam.
+                        
+                    </blockquote>
+                    <p>– Novak Djokovic</p>
+                </div>
+                <div class="review">
+                    <blockquote>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium explicabo necessitatibus quod aperiam expedita possimus animi qui, in incidunt labore. Animi temporibus corrupti eum non error enim odit quisquam.
+                    </blockquote>
+                    <p>– Idris Elba</p>
+                </div>
+            </section>
+            
+            <section id="subs" class="mailing">
+                <h2 class="mailing__title">Subscribe</h2>
+                <div class="form">
+                    <label for="email" class="form__label">
+                        Subscribe to our list for future course and book updates!!
+                    </label>
+
+                    <form class="form__container" action="/handle-form" method="post">
+                        <input id="email" class="form__input" autocomplete="off"/>
+                        <button type="submit" class="form__btn">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+            
+            <footer class="footer">
+                <section class="footer__container">
+                    <h4 class="footer__title">
+                        About
+                    </h4>
+                    <p class="footer__desc">
+                        This site is for the JavaScript Course on Udemy!
+                    </p>
+                    <small class="footer__copy">
+                        &copy; copyright 2022 Rick Sekuloski. All rights reserved.
+                    </small>
+                </section>
+                <section class="footer__container">
+                    <h4 class="footer__title">Buy</h4>
+                    <a class="footer__link" href="https://www.udemy.com/course/master-javascript-the-most-compete-javascript-course-2020/">
+                        Udemy
+                    </a>
+                    
+                </section>
+                <section class="footer__container">
+                    <h4 class="footer__title">Contact</h4>
+                    <a href="https://twitter.com/Rick29702077" class="footer__link">
+                        @Rick29702077 on Twitter
+                    </a>
+                    <a href="https://github.com/RickSekuloski" class="footer__link">
+                        @RickSekuloski on GitHub
+                    </a>
+                    <p class="footer__desc">Email: @</p>
+                </section>
+            </footer>
+        </main>
+    </body>
+</html>

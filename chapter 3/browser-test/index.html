@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Multiple Assests loading using media query</title>
+    <meta name="description" content="Which files are downloaded based on the media query rules" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      div {
+        color: #fff;
+        background-color: green;
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" media="(max-width: 300px)" href="small-300.css" />
+    <link rel="stylesheet" media="(max-width: 600px)" href="mobile-600.css" />
+    <link rel="stylesheet" media="(max-width: 900px)" href="tablet-900.css" />
+    <link rel="stylesheet" media="(max-width: 1200px)" href="pc-1200.css" />
+    <link rel="stylesheet" media="(min-width: 1200px)" href="large.css" />
+  </head>
+  <body>
+    <div class='large'>Very large screen</div>
+    <div class="small-300" >300px width, small-300 file downloaded </div>
+    <div class="mobile-600" >600px width, mobile-600 file downloaded</div>
+    <div class="tablet-900">900px width, tablet-900 file downloaded</div>
+    <div class="pc-1200" >1200px width, pc-1200 file downloaded</div>
+  </body>
+</html>
