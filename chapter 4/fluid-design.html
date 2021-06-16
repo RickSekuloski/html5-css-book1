@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fluid layout example, based on fixed-size.html</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      html {
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+      }
+
+      ol, ul {
+        list-style: none;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .text{
+        font-size: 18px;
+        color:#fff;
+      }
+
+      .wrapper {
+        width: 960px;
+        margin: 0 auto;
+      }
+
+      .header {
+        width: 100%;
+        height: 130px;
+        background-color: #a30e40;
+      }
+
+      .content {
+        width: 100%;
+        font-size: 0;
+      }
+
+      .left {
+        height: 625px;
+        width: 20.83%;
+        background-color: #f15b8d;
+        display: inline-block;
+       
+      }
+      .main-content {
+        height: 625px;
+        width: 68.75%;
+        background-color: #c99eb0;
+        display: inline-block;
+      }
+
+      .right {
+        height: 625px;
+        width: 10.41%;
+        background-color: #f15b8d;
+        display: inline-block;
+      }
+
+      .footer {
+        height: 200px;
+        width: 100%;
+        background-color: #5a0823;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div>
+          <p class="text">Header</p>
+        </div>
+      </header>
+      <div class="content">
+        <aside class="left">
+          <div>
+            <p class="text">Left Sidebar</p>
+          </div>
+        </aside>
+        <main class="main-content">
+          <div>
+            <p class="text">Main Content</p>
+          </div>
+        </main>
+        <aside class="right">
+          <div>
+            <p class="text">Right Sidebar</p>
+          </div>
+        </aside>
+      </div>
+      <footer class="footer">
+        <div>
+          <p class="text">Footer</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox align</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        /*
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        */
+.wrapper {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background-color: rgb(148, 102, 22);
+    display: flex;
+    height: 350px;
+    width: 500px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.item, .item2, .item3, .item4 {
+    background-color: rgb(94, 64, 14);
+    display: flex;
+    height: 250px;
+    width: 200px;
+    border: 1px solid #fff;
+}
+.item{
+    align-self: flex-start;
+}
+.item2{
+    align-self:center;
+}
+.item3{
+    align-self: flex-end;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item">Content of the inner item in flexbox container.</div>
+        <div class="item2">Content of the inner item in flexbox container.</div>
+        <div class="item3">Content of the inner item in flexbox container.</div>
+    </div>
+</body>
+</html>

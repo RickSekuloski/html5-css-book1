@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer at the bottom</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #ccc;
+  
+}
+
+main {
+  flex-grow: 1;
+}
+.content{
+  background-color: salmon;
+}
+.header{
+  background-color: slateblue;
+  min-height: 10rem;
+  flex-shrink: 0;
+}
+.footer{
+  background-color: slateblue;
+  min-height: 10rem;
+  flex-shrink: 0;
+}
+
+
+    
+</style>
+</head>
+<body>
+    <header class="header">
+    <h1>Header</h1>
+    </header>
+
+    <main class="content">
+    <h1>Content</h1>
+    <p>
+        This example is to keep the footer at the Bottom with
+        flexbox. In the past this was not that easy to achieve,
+        but is this flexbox example difficult?. Nope It's not.
+    </p>
+    </main>
+
+    <footer class="footer">
+    <h1>Footer</h1>
+    </footer>
+</body>
+</html>

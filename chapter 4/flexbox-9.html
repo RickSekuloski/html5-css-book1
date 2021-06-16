@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-content</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        /*
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        */
+.wrapper {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background-color: rgb(148, 102, 22);
+    display: flex;
+    height: 500px;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 18px;
+    /*flex-start*/
+    justify-content: flex-start;
+    /*flex-end*/
+    justify-content: flex-end;
+    /*center*/
+    justify-content: center;
+    /*space-between*/
+    justify-content: space-between;
+    /*space-around*/
+    justify-content: space-around;
+    /*space-evely*/
+    justify-content: space-evenly;
+
+
+}
+.item, .item2, .item3, .item4,.item5 {
+    background-color: rgb(172, 54, 33);
+    display: flex;
+    height: 250px;
+    width: 200px;
+    border: 1px solid #fff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item">Item1 Content.</div>
+        <div class="item2">Item2 Content.</div>
+        <div class="item3">Item3 Content.</div>
+        <div class="item4">Item4 Content.</div>
+        <div class="item5">Item5 Content.</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction:column and flex-direction:column-reverse </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        /*
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        */
+        .menu {
+            background-color: rgb(3, 4, 61);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8rem; 
+            min-height: 5rem; 
+            display: flex;
+            flex-direction: column;
+            /* Reverse column */
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .menu__item{ 
+            background-color: rgb(27, 11, 126);
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+            padding: 1rem 2rem;
+        }
+        /* .last {
+            margin-left: 0;
+            margin-right: auto;
+        } */
+    </style>
+    </head>
+    <body>
+    <div class="menu">
+        <a href="#" class="menu__item">Home</a>
+        <a href="#" class="menu__item">About Us</a>
+        <a href="#" class="menu__item">Products</a>
+        <a href="#" class="menu__item">Policy</a>
+        <a href="#" class="menu__item last">Contact Us</a>
+    </div>
+
+</body>
+</html>

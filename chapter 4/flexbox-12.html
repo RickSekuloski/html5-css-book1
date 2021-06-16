@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Order</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+ 
+  align-items: stretch;
+  background-color: #ccc;
+  
+}
+.items{
+    display: flex;
+  flex-direction: column;
+}
+.item{
+    height: 200px;
+    border: 3px solid #000;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-styles{
+    font-size: 33px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+
+}
+.item__1{
+    background-color: greenyellow;
+    order:3;
+    
+}
+.item__2{
+    background-color: salmon;
+    order:1;
+}
+.item__3{
+    background-color: slateblue;
+    order: 2;
+}
+.item__4{
+    background-color: aquamarine;
+    order: 5;
+}
+.item__5{
+    background-color: violet;
+    order: 4;
+}
+</style>
+</head>
+<body>
+    <div class="items">
+        <div class="item item__1">
+            <p class="p-styles">1</p>
+        </div>
+        <div class="item item__2">
+            <p class="p-styles">2</p>
+        </div>
+        <div class="item item__3">
+            <p class="p-styles">3</p>
+        </div>
+        <div class="item item__4">
+            <p class="p-styles">4</p>
+        </div>
+        <div class="item item__5">
+            <p class="p-styles">5</p>
+        </div>
+    </div>
+</body>
+</html>

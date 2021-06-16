@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-content</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        /*
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        */
+        .flex-container{
+            width: 100%;
+            height: 500px;
+            background-color: springgreen;
+            display: flex;
+           
+        }
+        .item1, .item2, .item3{
+            background-color: tomato;
+            border: 1px solid black;
+            margin: 1rem;
+        }
+        .item1 {
+            flex: 1 0 100px;
+        }
+        .item2 {
+            flex: 2 0 0;
+        }
+        .item3{
+            flex: 3 0 auto;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">Item1 Content.</div>
+        <div class="item2">Item2 Content.</div>
+        <div class="item3">Item3 Content.</div>
+    </div>
+    
+</body>
+</html>

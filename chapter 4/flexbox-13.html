@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Order Elements</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  align-items: stretch;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   flex-flow: wrap;
+}
+.header{
+    background-color: lightskyblue;
+    min-height: 200px;
+    width: 100%;
+    order: 1;
+}
+.left-sidebar{
+    background-color: darkseagreen;
+    width: 15%;
+    order:2;
+}
+.content{
+    background-color: darkorchid;
+    width: 70%;
+    min-height: 65%;
+    order: 3;
+}
+
+.right-sidebar{
+    order:4;
+    background-color: darkseagreen;
+    width: 15%;
+}
+.footer{
+    width: 100%;
+    background-color: firebrick;
+    min-height: 200px;
+    order: 5;
+}
+.heading{
+    font-size: 40px;
+}
+@media (max-width:800px) {
+  
+  .header{
+      height: 100px;
+  }
+  .right-sidebar{
+      order: 2;
+      min-height: 100px;
+      width: 100%;
+  }
+  .left-sidebar{
+      order: 3;
+      min-height: 100px;
+      background-color: gold;
+      width: 100%;
+  }
+  .content{
+      width: 100%;
+      min-height: 300px;
+  }
+  .footer{
+      width: 100%;
+      min-height: 100px;
+  }
+  
+  }
+
+</style>
+</head>
+<body class="container">
+    <header class="header">
+        <div class="heading">Header</div>
+    </header>
+    <aside class="left-sidebar">
+        <div class="heading">Left Sidebar</div>
+    </aside>
+    <main class="content">
+        <div class="heading">Content</div>
+    </main>
+    <aside class="right-sidebar">
+        <div class="heading">Right Sidebar</div>
+    </aside>
+    <footer class="footer">
+        <div class="heading">Footer</div>
+    </footer>
+</body>
+</html>
