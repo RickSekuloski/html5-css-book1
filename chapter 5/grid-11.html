@@ -1,0 +1,73 @@
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example 10 - grid template area for real website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+ <style>
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+.wrapper {
+    background-color: cornsilk;
+    font-family: 'Oswald' sans-serif;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd hd"
+      "sd sd sd main main main main main main"
+      "ft ft ft ft ft ft ft ft ft";
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    min-height: 100vh;
+}
+@media (max-width: 800px) {
+    .wrapper {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas:
+          "hd hd hd hd hd hd hd hd hd"
+          "sd sd sd sd sd sd sd sd sd"
+          "main main main main main main main main main"
+          "ft ft ft ft ft ft ft ft ft";
+    }
+}
+
+.header {
+    background-color: blue;
+    min-height: 200px;
+    grid-area: hd;
+}
+.footer {
+    background-color: blue;
+    min-height: 200px;
+    grid-area: ft;
+}
+.content {
+    background-color: cornsilk;
+    min-height: 600px;
+    grid-area: main;
+}
+.sidebar {
+    background-color: orangered;
+    grid-area: sd;
+}
+
+
+</style>
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+    </body>
+    </html>
+    

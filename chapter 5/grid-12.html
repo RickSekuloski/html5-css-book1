@@ -1,0 +1,57 @@
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example 12 - auto fit and auto fill</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+ <style>
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+.grid-container {
+    font-size: 40px;
+    color: #fff;
+    display: grid;
+    grid-gap: 20px;
+    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    /* grid: auto-flow 200px / auto;
+    grid: auto-flow 200px / auto;	
+    grid-template-rows: initial; 
+    grid-template-columns: auto; 
+    grid-template-areas: initial; 
+    grid-auto-flow: row;
+    grid-auto-rows: 200px;
+    grid-auto-columns: initial; */
+
+
+}
+.items {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    padding: 10px 20px;
+}
+
+</style>
+    </head>
+    <body>
+    <div class="grid-container">
+        <div class="items gird-item-1">1</div>
+        <div class="items grid-item-2">2</div>
+        <div class="items grid-item-3">3</div>
+        <div class="items grid-item-4">4</div>
+        <div class="items grid-item-5">5</div>
+        <div class="items grid-item-6">6</div>
+        <div class="items gird-item-7">7</div>
+        <div class="items grid-item-8">8</div>
+        <div class="items grid-item-9">9</div>
+    </div>
+    </body>
+    </html>
+    

@@ -1,0 +1,79 @@
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example 6 - auto flow</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+ <style>
+        /*
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        */
+.grid-container {
+    font-size: 50px;
+    color: #fff;
+    margin: 30px;
+    display: grid; 
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    grid-auto-flow: row;
+   }
+.gird-item-1{
+    grid-column:1/-1;
+}
+.grid-item-3{
+    grid-column: 2/-1;
+}
+.grid-item-4{
+    grid-row: 3/7;
+}
+.grid-item-6{
+    grid-row: 3/7;
+    grid-column: 3 /5;
+}
+
+.grid-item-10{
+    grid-row: 7 / span 3;
+    grid-column: 1/ span 2;
+}
+
+.items {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    padding: 10px 20px;
+}
+
+</style>
+    </head>
+    <body>
+    <div class="grid-container">
+        <div class="items gird-item-1">1</div>
+        <div class="items grid-item-2">2</div>
+        <div class="items grid-item-3">3</div>
+        <div class="items grid-item-4">4</div>
+        <div class="items grid-item-5">5</div>
+        <div class="items grid-item-6">6</div>
+        <div class="items gird-item-7">7</div>
+        <div class="items grid-item-8">8</div>
+        <div class="items grid-item-9">9</div>
+        <div class="items grid-item-10">10</div>
+        <div class="items grid-item-11">11</div>
+        <div class="items grid-item-12">12</div>
+        <div class="items gird-item-13">13</div>
+        <div class="items grid-item-14">14</div>
+        <div class="items grid-item-15">15</div>
+        <div class="items grid-item-16">16</div>
+        <div class="items grid-item-17">17</div>
+        <div class="items grid-item-18">18</div>
+        <div class="items grid-item-19">19</div>
+        <div class="items grid-item-20">20</div>
+    </div>
+    </body>
+    </html>
+    

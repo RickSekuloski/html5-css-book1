@@ -1,0 +1,62 @@
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example 4 - Align Grid Items</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <style>
+            /*
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            */
+    .grid-container {
+        margin: 30px;
+        display: inline-grid; 
+        grid-gap: 30px;
+        grid-template-rows: 400px 400px;
+        grid-template-columns: 400px 400px;
+    }
+    
+    .grid-item-1 { 
+        grid-row: 1;
+        grid-column: 1;
+    
+    }
+    .grid-item-2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .grid-item-3 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .grid-item-4 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    .items {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        outline: 8px dashed rgb(218, 134, 9);
+        font-size: 50px;
+        color: #333;
+    }
+    
+        </style>
+    </head>
+    <body>
+    <div class="grid-container">
+        <div class="items gird-item-1">1</div>
+        <div class="items grid-item-2">2</div>
+        <div class="items grid-item-3">3</div>
+        <div class="items grid-item-4">4</div>
+        <div class="items grid-item-5">5</div>
+    </div>
+    </body>
+    </html>
+    
